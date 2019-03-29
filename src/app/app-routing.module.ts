@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ContentComponent } from './content/content.component';
+import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
     {
-      path: 'mainpage',
+      path: '*',
       pathMatch: 'full',
-      //component: MainpageComponent,
+      component: ContentComponent,
       children: []
-    }
+    },
   ];
   
   @NgModule({
